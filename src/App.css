@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.bg-container{
+    width : 100%;
+    height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-main-container{
+    border: 1px solid #000000;
+    padding: 0;
+    margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container{
+    height : 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+    padding: 5px;
+    border: 1px solid #000000;
+    text-align: center;
+    width: 10%;
+    margin: 10px 0 0 55px;
+    font-family: "Roboto";
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+    margin: 10px 0 0 285px;
+    padding: 2px;
+    border: 1px solid #000000;
+    width: 25%;
+    text-align: center;
+    font-family: "Roboto";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hr-line{
+    background-color: #000000;
+    opacity: 1;
+
+}
+
+.img-header-container{
+    height : 200px;
+}
+
+.main-heading{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.img-container{
+    padding: 25px;
+}
+
+
+
+@media (max-width: 992px) {
+    .header-container {
+        display: flex;
+        height: auto; 
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+    .logo {
+        width: 20%; 
+        position: relative;
+        padding: 22px 5px 5px 5px;
+        text-align: start;
+        margin: 0;
+        border: none;
+    }
+
+    .logo::after {
+        content: ""; 
+        position: absolute; 
+        right: 35px; 
+        top: 0; 
+        height: 130%;
+        width: 1px; 
+        background-color: #000000; 
+    }
+
+    .title {
+        width: 60%; 
+        margin: 5px 0 0 0; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        width: 30%; 
+        position: relative;
+        padding: 22px 5px 5px 5px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo::after {
+        content: ""; 
+        position: absolute; 
+        right: -15px; 
+        top: 0; 
+        height: 128%;
+        width: 1px; 
+        background-color: #000000; 
+    }
+
+    .title {
+        width: 40%; 
+        margin-top: 15px;
+    }
 }
